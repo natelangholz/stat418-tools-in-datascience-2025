@@ -2,11 +2,15 @@
 
 ## Week Overview
 
-We talk about the Unix operating system that we started last week. Time permitting we will begin looking at web scraping through [The New York Times Developer Network](https://developer.nytimes.com) API.
+# Week 3
+
+## Week Overview
+
+We talk about the Unix operating system. Time permitting we will begin looking at web scraping through [The New York Times Developer Network](https://developer.nytimes.com) API.
 
 So that we all are using the same environment we will use a Docker Image for the book [Data Science at the Command Line](https://www.datascienceatthecommandline.com/index.html) by Jeroen Janssens, version 1, which is not the same image at the link. The following commands pull the image v1 from dockerhub. 
 
-First we need to pull the image using the follwing:
+First we need to pull the image using the following:
 
 `docker pull jeroenjanssens/data-science-at-the-command-line`
 
