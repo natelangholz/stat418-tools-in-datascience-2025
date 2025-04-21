@@ -25,3 +25,7 @@ __pycache__/
 *.pdb
 *.ipynb_checkpoints
 .env
+
+# temp file
+*.tmp
+*.log
