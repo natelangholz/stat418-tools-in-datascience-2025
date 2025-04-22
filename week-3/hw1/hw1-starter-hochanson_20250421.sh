@@ -61,7 +61,7 @@ sleep 5s
 
 ################## solution to problems ##################
 # 1. List the top 10 web sites from which requests came (non-404 status).
-p1=$(awk '{print $1 $6}' $file_non404 | sort | uniq -c | sort -nr | head -n 10)
+p1=$(awk '{print $1 $7}' $file_non404 | sort | uniq -c | sort -nr | head -n 10)
 printf "1. List the top 10 web sites from which requests came (non-400 status).\n"
 printf "result:\n%s\n" "$p1"
 
