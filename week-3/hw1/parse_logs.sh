@@ -94,4 +94,29 @@ done
 
 #Question 9
 
- 
+
+
+#Question 10
+
+echo "Question 10:"
+
+most_active_date=$(grep -oP '\[\d{2}/\w{3}/1995' "$file" | sed 's/\[//' | sort | uniq -c | sort -nr | head -1)
+count=$(echo "$most_active_date" | awk '{print $1}')
+date=$(echo "$most_active_date" | awk '{print $2}')
+echo "In file $file, the date that saw the most activity was $date with $count requests."
+
+#Question 11
+
+echo "Question 11:"
+
+# Extract and count requests per date
+date_counts=$(grep -oP '\[\d{2}/\w{3}/1995' "$file" | sed 's/\[//' | sort | uniq -c)
+
+# Filter out empty lines and find the minimum (non-zero) activity date
+least_active_date=$(echo "$date_counts" | sort -n | head -1)
+
+# Parse the count and date
+count=$(echo "$least_active_date" | awk '{print $1}')
+date=$(echo "$least_active_date" | awk '{print $2}')
+
+echo "In file $file, the date with the least activity (excluding outages) was $date with $count requests."
