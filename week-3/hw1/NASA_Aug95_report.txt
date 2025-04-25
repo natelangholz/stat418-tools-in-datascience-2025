@@ -1,0 +1,53 @@
+==============================
+Report for NASA_Aug95.log
+==============================
+
+1) Top‑10 host names / IPs (non‑404):
+6519 edams.ksc.nasa.gov
+4816 piweba4y.prodigy.com
+4779 163.206.89.4
+4576 piweba5y.prodigy.com
+4369 piweba3y.prodigy.com
+3866 www-d1.proxy.aol.com
+3522 www-b2.proxy.aol.com
+3445 www-b3.proxy.aol.com
+3412 www-c5.proxy.aol.com
+3393 www-b5.proxy.aol.com
+
+2) Percentage of IP vs hostname:
+IP = 28.44%   Hostname = 71.56%
+
+3) Top‑10 requested resources (non‑404):
+97410 /images/NASA-logosmall.gif
+75337 /images/KSC-logosmall.gif
+67448 /images/MOSAIC-logosmall.gif
+67068 /images/USA-logosmall.gif
+66444 /images/WORLD-logosmall.gif
+62778 /images/ksclogo-medium.gif
+43687 /ksc.html
+37826 /history/apollo/images/apollo-logo1.gif
+35138 /images/launch-logo.gif
+30347 /
+
+4) Request verb frequency:
+GET	1565812
+HEAD	3965
+POST	111
+
+5) Total 404 errors:
+9978
+
+6) Most common status code:
+200 with 88.95% (1396473 of 1569898)
+
+7) Hourly activity (UTC in log):
+Most active : 15 (109465 req)
+Least active: 04 (26756 req)
+
+8) Response sizes:
+Max = 3421948 bytes   Mean = 17241.7 bytes
+
+9‑11) August outage & busiest / quietest days:
+Outage from 01/Aug/1995 to 03/Aug/1995 ( 1 days)
+Most active day : 31/Aug/1995 (90125 req)
+Least active day: 26/Aug/1995 (31608 req)

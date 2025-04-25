@@ -1,0 +1,48 @@
+==============================
+Report for NASA_Jul95.log
+==============================
+
+1) Top‑10 host names / IPs (non‑404):
+17462 piweba3y.prodigy.com
+11535 piweba4y.prodigy.com
+9776 piweba1y.prodigy.com
+7798 alyssa.prodigy.com
+7573 siltb10.orl.mmc.com
+5884 piweba2y.prodigy.com
+5414 edams.ksc.nasa.gov
+4891 163.206.89.4
+4843 news.ti.com
+4344 disarray.demon.co.uk
+
+2) Percentage of IP vs hostname:
+IP = 22.16%   Hostname = 77.84%
+
+3) Top‑10 requested resources (non‑404):
+111388 /images/NASA-logosmall.gif
+89639 /images/KSC-logosmall.gif
+60468 /images/MOSAIC-logosmall.gif
+60014 /images/USA-logosmall.gif
+59489 /images/WORLD-logosmall.gif
+58802 /images/ksclogo-medium.gif
+40871 /images/launch-logo.gif
+40279 /shuttle/countdown/
+40231 /ksc.html
+33585 /images/ksclogosmall.gif
+
+4) Request verb frequency:
+GET	1887646
+HEAD	3952
+POST	111
+
+5) Total 404 errors:
+10714
+
+6) Most common status code:
+200 with 89.76% (1697914 of 1891715)
+
+7) Hourly activity (UTC in log):
+Most active : 14 (122479 req)
+Least active: 05 (31919 req)
+
+8) Response sizes:
+Max = 6823936 bytes   Mean = 20657.7 bytes
