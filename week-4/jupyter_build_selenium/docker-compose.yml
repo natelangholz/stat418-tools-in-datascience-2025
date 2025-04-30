@@ -1,0 +1,24 @@
+services:
+  jupyter:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ../:/home/jovyan/
+    ports:
+      - 8888:8888
+    command: "start-notebook.sh --NotebookApp.token="
+
+  chrome:
+    image: selenium/node-chrome:3.14.0-gallium
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+
+  hub:
+    image: selenium/hub:3.14.0-gallium
+    ports:
+      - "4444:4444"
