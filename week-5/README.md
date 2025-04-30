@@ -5,8 +5,12 @@ This week will see the closet we will come to 'modeling' in this course, but in 
 
 Introduction to Vector Databases, Retrieval Augemented Generation (RAG), LangChain (and Llamaindex, briefly) and possibly Ollama. 
 
-(slides)[]
+[slides](https://github.com/natelangholz/stat418-tools-in-datascience-2025/blob/main/week-4/slides-week-5.pdf)
 
-###Project Proposal
+### Project Proposal
 --------
 Next week will start with project proposal, followed by short lecture. The presentation order will be randomized. There will be a new 'project-proposal' branch where your slides should be submitted through a pull request from your forked repo from another new branch. 
+
+### Resources
+
+[Is RAG Dead?](https://qdrant.tech/articles/rag-is-dead/)
