@@ -1,0 +1,72 @@
+#!/bin/bash
+
+analyze_log() {
+  LOGFILE="$1"
+  echo "Analysis for: $LOGFILE"
+
+  echo -e "\n1. Top 10 websites (non-404):"
+  awk '$9 != 404 {print $1}' "$LOGFILE" | sort | uniq -c | sort -nr | head -10
+
+  echo -e "\n2. Percentage of requests from IP vs Hostnames:"
+  total=$(awk '{print $1}' "$LOGFILE" | wc -l)
+  ip=$(awk '{print $1}' "$LOGFILE" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$' | wc -l)
+  ip_pct=$(echo "scale=2; $ip*100/$total" | bc)
+  host_pct=$(echo "scale=2; 100 - $ip_pct" | bc)
+  echo "IP: $ip_pct% | Hostname: $host_pct%"
+
+  echo -e "\n3. Top 10 requested paths (non-404):"
+  awk '$9 != 404 {print $7}' "$LOGFILE" | sort | uniq -c | sort -nr | head -10
+
+  echo -e "\n4. Most frequent request types:"
+  awk '{print $6}' "$LOGFILE" | sed 's/"//' | sort | uniq -c | sort -nr
+
+  echo -e "\n5. Number of 404 errors:"
+  awk '$9 == 404' "$LOGFILE" | wc -l
+
+  echo -e "\n6. Most frequent response code and percentage:"
+  top=$(awk '{print $9}' "$LOGFILE" | grep -E '^[0-9]{3}$' | sort | uniq -c | sort -nr | head -1)
+  top_code=$(echo "$top" | awk '{print $2}')
+  top_count=$(echo "$top" | awk '{print $1}')
+  total_codes=$(awk '{print $9}' "$LOGFILE" | grep -E '^[0-9]{3}$' | wc -l)
+  top_pct=$(echo "scale=2; $top_count*100/$total_codes" | bc)
+  echo "Code: $top_code | Count: $top_count | Percentage: $top_pct%"
+
+  echo -e "\n7. Activity by hour (24h format):"
+  awk -F: '{print $2}' "$LOGFILE" | sort | uniq -c | sort -nr
+
+  echo -e "\n8. Response size: max and average bytes:"
+  awk '$10 ~ /^[0-9]+$/ {sum += $10; if ($10 > max) max = $10; count++} END {print "Max:", max, "Avg:", int(sum/count)}' "$LOGFILE"
+
+  echo -e "\n10. Date with most activity:"
+  awk '{print $4}' "$LOGFILE" | cut -d: -f1 | sed 's/\[//' | sort | uniq -c | sort -nr | head -1
+
+  echo -e "\n11. Date with least activity (excluding empty):"
+  awk '{print $4}' "$LOGFILE" | cut -d: -f1 | sed 's/\[//' | sort | uniq -c | awk '$1 > 10' | sort -n | head -1
+
+  echo -e "\n"
+}
+
+analyze_log NASA_Jul95.log
+analyze_log NASA_Aug95.log
+
+echo -e "\n9. Outage periods in August (gap > 1 day):"
+awk '{gsub(/\[/, "", $4); split($4, a, ":"); print a[1]}' NASA_Aug95.log | sort | uniq > dates.txt
+
+prev=""
+while read -r curr; do
+  if [[ -n "$prev" ]]; then
+    prev_s=$(date -d "$prev" +%s 2>/dev/null)
+    curr_s=$(date -d "$curr" +%s 2>/dev/null)
+    if [[ -n "$prev_s" && -n "$curr_s" ]]; then
+      delta=$(( (curr_s - prev_s) / 86400 ))
+      if (( delta > 1 )); then
+        from=$(date -d "$prev + 1 day" +%d/%b/%Y)
+        to=$(date -d "$curr - 1 day" +%d/%b/%Y)
+        echo "No data collected from $from to $to — $((delta - 1)) days"
+      fi
+    fi
+  fi
+  prev="$curr"
+done < dates.txt
+
+rm -f dates.txt
