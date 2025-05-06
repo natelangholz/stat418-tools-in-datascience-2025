@@ -1,0 +1,8 @@
+services:
+  flask-slim:
+    build : .
+    volumes :
+     - ../scripts:/scripts
+    ports:
+     - 5001:5001
+
