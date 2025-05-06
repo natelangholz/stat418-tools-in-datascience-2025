@@ -1,0 +1,31 @@
+## General
+.DS_Store
+UCLA/
+
+## VS code environment
+.vscode/
+.vscode-test/
+.vscode-server/
+.vscode-server-insiders/
+.vscode-test/
+.vscode-test/
+
+
+## R Environment
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Python Environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.ipynb_checkpoints
+.env
+
+# temp file
+*.tmp
+*.log
