@@ -1,0 +1,7 @@
+services:
+  flask:
+    build : .
+    volumes :
+     - ../scripts:/scripts
+    ports:
+     - 5001:5001
