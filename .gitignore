@@ -29,3 +29,8 @@ __pycache__/
 # temp file
 *.tmp
 *.log
+
+# class temp file
+week-4/.ipython/
+week-4/.jupyter/
+week-4/.local/
