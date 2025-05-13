@@ -29,3 +29,15 @@ __pycache__/
 # temp file
 *.tmp
 *.log
+
+# week3
+week-3/HW1/
+week-3/Python/
+
+# week4
+week-4/.ipython/
+week-4/.jupyter/
+week-4/.local/
+
+final-project/Models/
+final-project/Data/
