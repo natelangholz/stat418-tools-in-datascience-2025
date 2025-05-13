@@ -32,6 +32,7 @@ __pycache__/
 *.tmp
 *.log
 
+<<<<<<< HEAD
 # week3
 week-3/HW1/
 week-3/Python/
@@ -43,3 +44,9 @@ week-4/.local/
 
 final-project/Models/
 final-project/Data/
+=======
+# class temp file
+week-4/.ipython/
+week-4/.jupyter/
+week-4/.local/
+>>>>>>> 5a7e65769dc993836748b03705c6bb1289fb24fe
