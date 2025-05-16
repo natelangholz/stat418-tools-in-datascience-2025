@@ -4,13 +4,16 @@
 #lightweight version of python
 FROM python:3.12-slim 
 
-# Upgade pip
-#RUN pip install --upgrade pip
+#EXPOSE 5001
+
+WORKDIR /server
 
 # Copy requirements.txt in so that pip can access it
-COPY requirements.txt /home/requirements.txt
+COPY requirements.txt requirements.txt
 
 # Install the requirements.txt
-RUN pip install -r /home/requirements.txt
+RUN pip install -r requirements.txt
 
-CMD ["python","/scripts/server.py"]
+COPY . .
+
+CMD ["python","server.py"]

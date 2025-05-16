@@ -1,7 +1,8 @@
 services:
-  flask:
+  app:
     build : .
-    volumes :
-     - ../scripts:/scripts
+    volumes:
+     - .:/server
     ports:
      - 5001:5001
+
