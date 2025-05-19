@@ -16,3 +16,40 @@ Date: 05-18-25
 
 ### Link for HW submission
 Mtcars-Flask-API (https://github.com/ohsono/Mtcars-Flask-Api)
+Cloud Run(https://mtcars-api-793212150918.us-west2.run.app)
+Docker Hub(docker.io/ohsonoresearch/mtcars-api:latest)
+
+```bash
+(base)  hobangu@Mac  ~  curl https://mtcars-api-793212150918.us-west2.run.app/predict \
+  -H "Content-Type: application/json" \
+  -d '{
+    "cyl": 6,
+    "disp": 160,
+    "hp": 110,
+    "drat": 3.9,
+    "wt": 2.62,
+    "qsec": 16.46,
+    "vs": 0,
+    "am": 1,
+    "gear": 4,
+    "carb": 4
+  }'
+```
+Response:
+```json
+{
+  "features_used": [
+    "cyl",
+    "disp",
+    "hp",
+    "drat",
+    "wt",
+    "qsec",
+    "vs",
+    "am",
+    "gear",
+    "carb"
+  ],
+  "predicted_mpg": 21.878958945281678
+}
+```
