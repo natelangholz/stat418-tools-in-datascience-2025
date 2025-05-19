@@ -12,4 +12,4 @@ There should also be directions (possibly in another README in another directory
 
 To submit, create a separate markdown file simple with your name and title of this homework that is a link to your repo. Name this file `<your-name>_hw3.md` and create a pull request to the week-7 homework submission directory under the homework3-submission branch. 
 
-This is due Week 8, May 22, 2025 at 6pm. 
+This is due Week 8, May 24, 2025 at 6pm. 
