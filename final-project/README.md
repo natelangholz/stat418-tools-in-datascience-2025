@@ -1,5 +1,6 @@
 # Final Project: Create a Data/ML/AI Application
 
+Please note there are 2 branches for final project submissions; 1 for slide submission and 1 for link to github repo submission
 
 ## Project Description
 
