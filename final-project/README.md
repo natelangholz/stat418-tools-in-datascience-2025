@@ -1,6 +1,6 @@
 # Final Project: Create a Data/ML/AI Application
 
-Please note there are 2 branches for final project submissions; 1 for slide submission and 1 for link to github repo submission.  The final slides are due June 2nd 11:59 pm and the deadline for everything else is June 3 end of day. Grading of the github repositories on the 4th and functionality assessment of the APP and API. 
+Please note there are 2 branches for final project submissions; 1 for slide submission and 1 for link to github repo submission.  The final slides are due June 2nd 11:59 pm and the deadline for everything else is June 3 end of day. Grading of the github repositories start on the 4th and functionality assessment of the APP and API will begin then as well. 
 
 ## Project Description
 
