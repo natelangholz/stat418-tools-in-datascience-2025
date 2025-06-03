@@ -1,0 +1,68 @@
+
+1) Top‑10 remote hosts (non‑404 requests)
+  21831 piweba3y.prodigy.com
+  16351 piweba4y.prodigy.com
+  12711 piweba1y.prodigy.com
+  11933 edams.ksc.nasa.gov
+   9670 163.206.89.4
+   8124 news.ti.com
+   7983 www-d1.proxy.aol.com
+   7981 alyssa.prodigy.com
+   7573 siltb10.orl.mmc.com
+   7456 www-a2.proxy.aol.com
+------------------------------------------------------
+
+2) Host field: IP vs. hostname (percentage)
+IP: 25.01%  (865634)
+Hostname: 74.99%  (2595978)
+------------------------------------------------------
+
+3) Top‑10 requested resources (non‑404)
+ 207520 GET /images/NASA-logosmall.gif HTTP/1.0
+ 164487 GET /images/KSC-logosmall.gif HTTP/1.0
+ 126933 GET /images/MOSAIC-logosmall.gif HTTP/1.0
+ 126108 GET /images/USA-logosmall.gif HTTP/1.0
+ 124972 GET /images/WORLD-logosmall.gif HTTP/1.0
+ 120704 GET /images/ksclogo-medium.gif HTTP/1.0
+  83209 GET /ksc.html HTTP/1.0
+  75839 GET /images/launch-logo.gif HTTP/1.0
+  68759 GET /history/apollo/images/apollo-logo1.gif HTTP/1.0
+  64467 GET /shuttle/countdown/ HTTP/1.0
+------------------------------------------------------
+
+4) Most frequent request methods
+1887646 NASA_Jul95.log:GET
+1565812 NASA_Aug95.log:GET
+   3965 NASA_Aug95.log:HEAD
+   3952 NASA_Jul95.log:HEAD
+    111 NASA_Jul95.log:POST
+    111 NASA_Aug95.log:POST
+      1 NASA_Jul95.log:MISSION
+------------------------------------------------------
+
+5) Total number of 404 errors
+20692
+------------------------------------------------------
+
+6) Most common response code (+ its share)
+------------------------------------------------------
+
+7) Activity by hour (all days)
+Most active hour: 15:00 (230665 requests)
+Least active hour: 04:00 (58990 requests)
+------------------------------------------------------
+
+8) Byte counts (payload size)
+Largest = 0 bytes | Average = 19079 bytes
+------------------------------------------------------
+
+9) August outage (gap > 1 h, reported once)
+------------------------------------------------------
+
+10) Busiest calendar day overall
+134203 13/Jul/1995
+------------------------------------------------------
+
+11) Least‑active day (excluding outage date 02/Aug/1995)
+27121 28/Jul/1995
+------------------------------------------------------
