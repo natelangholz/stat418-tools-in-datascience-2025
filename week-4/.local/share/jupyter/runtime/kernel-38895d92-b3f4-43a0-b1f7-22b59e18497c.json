@@ -1,0 +1,13 @@
+{
+  "shell_port": 36931,
+  "iopub_port": 40759,
+  "stdin_port": 35701,
+  "control_port": 43771,
+  "hb_port": 35939,
+  "ip": "127.0.0.1",
+  "key": "53213d11-454b678d0fa6c394d7fa476a",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jovyan/jupyter_build/Class_01_python_introduction.ipynb"
+}
