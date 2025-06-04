@@ -1,0 +1,4 @@
+iris
+colnames(iris)
+pairs(iris[1:4], main = "Edgar Anderson's Iris Data", pch = 22, bg = c("pink", "green3", "blue")[unclass(iris$Species)])
+
