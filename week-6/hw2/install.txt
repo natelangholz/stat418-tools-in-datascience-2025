@@ -1,0 +1,10 @@
+grpcio==1.70.0
+protobuf==5.28.1
+grpcio-tools==1.70.0
+langchain
+langchain-community
+langchain-google-genai==2.1.4
+chromadb
+beautifulsoup4
+pandas
+numpy==1.26.4
