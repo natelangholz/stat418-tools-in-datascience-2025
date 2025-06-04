@@ -1,0 +1,52 @@
+## General
+.DS_Store
+UCLA/
+week-6/HW2/
+week-5/jupyter_build/chroma_db/
+
+## VS code environment
+.vscode/
+.vscode-test/
+.vscode-server/
+.vscode-server-insiders/
+.vscode-test/
+.vscode-test/
+
+
+## R Environment
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Python Environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.ipynb_checkpoints
+.env
+
+# temp file
+*.tmp
+*.log
+
+<<<<<<< HEAD
+# week3
+week-3/HW1/
+week-3/Python/
+
+# week4
+week-4/.ipython/
+week-4/.jupyter/
+week-4/.local/
+
+final-project/Models/
+final-project/Data/
+=======
+# class temp file
+week-4/.ipython/
+week-4/.jupyter/
+week-4/.local/
+>>>>>>> 5a7e65769dc993836748b03705c6bb1289fb24fe
